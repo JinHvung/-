@@ -1,0 +1,21 @@
+<form bindsubmit="formSubmit">
+  <view class="login-logo">
+    <image class="img-size" src="../login/img/img_login_logo.png"></image>
+  </view>
+
+  <view class="flex-wrp">
+    <image class="login-phone-size" src="../login/img/img_login_phone.png"></image>
+    <input class="phone-input" name="phone" placeholder="手机号码" />
+  </view>
+
+  <view class="flex-wrp">
+    <image class="login-phone-size" src="../login/img/img_login_pwd.png"></image>
+    <input class="phone-input" name="psw" placeholder="登录密码" password/>
+  </view>
+
+  <text class="login-forget-pwd" bindtap="changePwd">忘记密码</text>
+
+  <button class="login-btn" formType="submit">登陆</button>
+</form>
+
+ <button class="login-btn" bindtap="chooseImg">获取图片</button>

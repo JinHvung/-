@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/interflow/interflow",
+    "pages/generalize/generalize",
+    "pages/test/test",
+    "pages/test/test2",
+    "pages/change/change",
+    "pages/grid/grid",
+    "pages/footer/footer",
+    "pages/loadmore/loadmore"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "第一个小程序测试",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom "
+  },
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#53ae71",
+    "borderStyle": "ff00ff",
+    "backgroundColor": "#ffffff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/index/img/home_n.png",
+        "selectedIconPath": "pages/index/img/home_p.png"
+      },
+      {
+        "pagePath": "pages/interflow/interflow",
+        "text": "交流",
+        "iconPath": "pages/interflow/img/interflow_n.png",
+        "selectedIconPath": "pages/interflow/img/interflow_p.png"
+      },
+      {
+        "pagePath": "pages/generalize/generalize",
+        "text": "推广",
+        "iconPath": "pages/generalize/img/generalize_n.png",
+        "selectedIconPath": "pages/generalize/img/generalize_p.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "我",
+        "iconPath": "pages/logs/img/mine_n.png",
+        "selectedIconPath": "pages/logs/img/mine_p.png"
+      }
+    ]
+  }
+}

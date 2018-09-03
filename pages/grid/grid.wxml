@@ -1,0 +1,17 @@
+<!--pages/grid/grid.wxml-->
+<view class="page">
+  <view class="page-hd">
+    <view class="page-title">Grid</view>
+    <view class="page-desc">九宫格</view>
+  </view>
+  <view class="page-bd">
+    <view class="weui-grids">
+      <block wx:for-items="{{grids}}" wx:key="{{index}}">
+        <navigator url='' class="weui-grid" hover-class="weui-grid-active">
+          <image class="weui-grid-icon" src="../index/img/img_home_tool.png" />
+          <view class="weui-grid-label">Grid</view>
+        </navigator>
+      </block>
+    </view>
+  </view>
+</view>

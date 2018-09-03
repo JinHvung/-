@@ -1,0 +1,73 @@
+<view class="home-pager">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="{{home-pager-img-szie}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class="home-tool">
+  <view class="home-tool-1" bindtap="clickTool">
+    <view class="home-tool-style">
+      <image class="home-tool-1-img" src="../index/img/img_home_tool.png" />
+      <view class="home-tool-font-size">验机工具</view>
+    </view>
+  </view>
+
+  <view class="home-tool-1" bindtap="clickScan">
+    <view class="home-tool-style">
+      <image class="home-tool-1-img" src="../index/img/img_home_scan.png" />
+      <view class="home-tool-font-size">扫码回收</view>
+    </view>
+  </view>
+
+  <view class="home-tool-1" bindtap="clickRecyle">
+    <view class="home-tool-style">
+      <image class="home-tool-1-img" src="../index/img/img_home_manual.png" />
+      <view class="home-tool-font-size">手动回收</view>
+    </view>
+  </view>
+</view>
+
+<view class="home-order">
+  <view class="home-order-title">
+    <view class="home-my-order">我的订单</view>
+    <view class="home-more-order" bindtap="moreOrder">
+      <view class="home-more-order-font">查看全部订单</view>
+      <image src="../index/img/img_next.png" class="home-more-order-img" />
+    </view>
+  </view>
+
+  <view class="home-order-item">
+    <view class="home-order-item-1">
+      <view class="home-order-item-style">
+        <image class="home-order-item-img" src="../index/img/img_home_wait_sure.png" />
+        <view class="home-order-item-size">待报价</view>
+      </view>
+    </view>
+
+    <view class="home-order-item-1">
+      <view class="home-order-item-style">
+        <image class="home-order-item-img" src="../index/img/img_home_over_time.png" />
+        <view class="home-order-item-size">已超时</view>
+      </view>
+    </view>
+
+    <view class="home-order-item-1">
+      <view class="home-order-item-style">
+        <image class="home-order-item-img" src="../index/img/img_home_wait_shipment.png" />
+        <view class="home-order-item-size">待确认</view>
+      </view>
+    </view>
+
+    <view class="home-order-item-1">
+      <view class="home-order-item-style">
+        <image class="home-order-item-img" src="../index/img/img_home_wait_offer.png" />
+        <view class="home-order-item-size">待发货</view>
+      </view>
+    </view>
+  </view>
+
+</view>

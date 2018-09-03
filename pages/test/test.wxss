@@ -1,0 +1,6 @@
+/* pages/test/test.wxss */
+.btn{
+  margin-left: 10rpx;
+  margin-bottom: 10rpx;
+  margin-top: 10rpx;
+}

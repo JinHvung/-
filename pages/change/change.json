@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "重置密码",
+  "backgroundColor": "#eeeeee",
+  "navigationBarBackgroundColor": "#f2f2f2",
+  "navigationStyle": "custom ",
+  "enablePullDownRefresh": true
+}

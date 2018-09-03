@@ -1,0 +1,65 @@
+/* pages/change/change.wxss */
+
+.button-style{
+  display: flex;
+  margin-bottom: 50rpx;
+}
+
+.ddd{
+  width: 200rpx;
+  height: 200rpx;
+  background: bisque;
+  margin-left: 80rpx;
+  margin-bottom: 80rpx;
+
+}
+
+.change-phone {
+  display: flex;
+  width: 536rpx;
+  height: 98rpx;
+  margin: 0 auto;
+  margin-top: 138rpx;
+  border-bottom: 1px solid #b5b5b5;
+}
+
+.change-pwd {
+  display: flex;
+  width: 536rpx;
+  height: 98rpx;
+  margin: 0 auto;
+  border-bottom: 1px solid #b5b5b5;
+  flex-direction: row;
+}
+
+.change-phone-img-size {
+  width: 40rpx;
+  height: 40rpx;
+  margin: auto 0;
+  padding-left: 15rpx;
+}
+
+.change-phone-input {
+  flex: 1;
+  height: 100%;
+  padding-left: 40rpx;
+  font-size: 28rpx;
+}
+
+.change-send-code {
+  font-size: 22rpx;
+  color: white;
+  margin: auto 0;
+  float: right;
+  margin-right: 15rpx;
+  background: #58b878;
+}
+
+.change-btn {
+  width: 520rpx;
+  height: 90rpx;
+  margin-top: 60rpx;
+  color: white;
+  background: #58b878;
+  font-size: 32rpx;
+}

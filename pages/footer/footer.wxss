@@ -1,0 +1,56 @@
+/* pages/footer/footer.wxss */
+
+.weui-footer {
+  margin-bottom: 100rpx;
+}
+
+.weui-footer-fixed-bottom {
+  margin-bottom: 0;
+}
+
+.weui-footer {
+  color: #999;
+  font-size: 28rpx;
+  text-align: center;
+}
+
+.weui-footer-fixed-bottom {
+  position: fixed;
+  bottom: 0.52em;
+  left: 0;
+  right: 0;
+}
+
+.weui-footer-links {
+  font-size: 0;
+}
+
+.weui-footer-link {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0.62em;
+  position: relative;
+  font-size: 28rpx;
+  color: #586c94;
+}
+
+.weui-footer-link:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  width: 2rpx;
+  border-left: 1rpx solid #c7c7c7;
+  color: #c7c7c7;
+  left: -0.65em;
+  top: 0.36em;
+  bottom: 0.36em;
+}
+
+.weui-footer-link:first-child:before {
+  display: none;
+}
+
+.weui-footer-text{
+  padding: 0 .34em;
+  font-size: 24rpx;
+}

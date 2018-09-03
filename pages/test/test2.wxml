@@ -1,0 +1,3 @@
+<text>新页面</text>
+
+<button bindtap="close" size="mini" plain>关闭</button>

@@ -1,0 +1,142 @@
+/**index.wxss**/
+
+.home-pager {
+  width: 100%;
+  height: auto;
+  border-bottom: 10rpx #ebebeb solid;
+}
+
+.home-pager-img-szie {
+  width: 100%;
+  height: 313rpx;
+}
+
+.home-tool {
+  width: 100%;
+  height: 215rpx;
+  display: flex;
+  background: white;
+  border-bottom: 14rpx #ebebeb solid;
+}
+
+.home-tool-1 {
+  height: 215rpx;
+  flex: 1;
+  text-align: center;
+}
+
+.home-tool-style {
+  height: 215rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home-tool-1-img {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 0 auto;
+}
+
+.home-tool-font-size {
+  margin-top: 20rpx;
+  color: #333;
+  font-size: 28rpx;
+}
+
+.home-order {
+  width: 100%;
+  height: 324rpx;
+  display: flex;
+  background: white;
+  border-bottom: 14rpx #ebebeb solid;
+  flex-direction: column;
+}
+
+.home-order-title {
+  display: flex;
+  width: 100%;
+  height: 88rpx;
+  border-bottom: 1px #b5b5b5 solid;
+}
+
+.home-my-order {
+  flex: 1;
+  font-size: 36rpx;
+  color: #333;
+  margin: auto 0;
+  margin-left: 44rpx;
+}
+
+.home-more-order {
+  display: flex;
+  margin: auto 0;
+}
+
+.home-more-order-font {
+  font-size: 30rpx;
+  color: #333;
+  opacity: 0.7;
+}
+
+.home-more-order-img {
+  width: 30rpx;
+  height: 30rpx;
+  margin: auto 0;
+  margin-right: 34rpx;
+}
+
+.home-order-item {
+  display: flex;
+  width: 100%;
+  height: 236rpx;
+  flex-direction: row;
+}
+
+.home-order-item-1 {
+  height: 236rpx;
+  flex: 1;
+  text-align: center;
+}
+
+.home-order-item-style {
+  height: 236rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home-order-item-img {
+  width: 96rpx;
+  height: 96rpx;
+  margin: 0 auto;
+}
+
+.home-order-item-size {
+  margin-top: 8rpx;
+  color: #333;
+  font-size: 34rpx;
+}
+
+/*--------  */
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}

@@ -1,0 +1,23 @@
+<!--pages/interflow/interflow.wxml-->
+<text>{{msg}}</text>
+<button bindtap='click'>点击</button>
+<button bindtap='onScan'>打开扫一扫</button>
+
+<view>{{message}}</view>
+<view wx:for="{{array}}">{{item}}</view>
+
+<icon type="clear"></icon>
+
+<button class="btn" bindtap="showMsg" size="mini" type="primary" plain>显示消息提示框</button>
+<button class="btn" bindtap="showState" size="mini" type="warn" plain>显示模态弹窗</button>
+<button class="btn" bindtap="showMenu" size="mini" type="primary" plain>显示操作菜单</button>
+<button class="btn" bindtap="showLoad" size="mini" type="primary" plain>显示 loading 提示框</button>
+<button class="btn" bindtap="setBarTitle" size="mini" type="primary" plain>设置导航条</button>
+<button class="btn" bindtap="setTabBar" size="mini" plain>设置TabBar</button>
+<button class="btn" bindtap="gotoNext" size="mini" plain>跳转</button>
+
+<view class="view-class">
+  <button size="mini" bindtap="gotoGrid">九宫格</button>
+  <button size="mini" bindtap="gotoFooter">页脚</button>
+  <button size="mini" bindtap="gotoLoadMore">加载更多</button>
+</view>

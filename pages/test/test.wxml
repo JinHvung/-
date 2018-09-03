@@ -1,0 +1,6 @@
+<!--pages/test/test.wxml-->
+<text>pages/test/test.wxml</text>
+
+<button class="btn" bindtap="gotoNext" size="mini" plain>跳转</button>
+<button class="btn" bindtap="gotoTab" size="mini" plain>跳转到tab页面</button>
+

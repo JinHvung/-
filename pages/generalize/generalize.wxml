@@ -1,0 +1,126 @@
+<!--pages/generalize/generalize.wxml-->
+<button bindtap='clickMe'>点击按钮</button>
+<text>{{msg}}</text>
+<map longitude='106.55' latitude='29.57'></map>
+<button bindtap='location'>获取位置</button>
+<text>{{latitude}}</text>
+<!-- <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="i">
+  <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="j">
+    <view wx:if="{{i <= j}}">
+      {{i}} * {{j}} = {{i * j}}
+    </view>
+  </view>
+</view> -->
+
+<view>数据绑定</view>
+<view>{{message}}</view>
+<view wx:if="{{condition}}">条件成立</view>
+<view hidden="{{flag ? true : false}}">Hidden</view>
+<view>{{a + b}} + {{c}} + d</view>
+<view wx:if="{{length < 5}}">条件小于5</view>
+<view>{{"Hello " + name}}</view>
+<view>{{object.key}} {{array[0]}}</view>
+<view wx:for="{{[zero, 1, 2, 3, 4]}}">{{item}}</view>
+<view wx:for="{{[1, 2, 3]}}">{{item}}</view>
+
+<view>列表渲染</view>
+<view wx:for="{{array1}}">{{index}}:{{item.message}}</view>
+
+<view wx:for="{{array1}}" wx:for-index="idx" wx:for-item="itemName">
+  {{idx}} : {{itemName.message}}
+</view>
+
+<block wx:for="{{[1, 2, 3]}}">
+  <view>{{index}} : </view>
+  <view>{{item}}</view>
+</block>
+
+<switch wx:for="{{objectArray}}" wx:key="unique" style="display: block;">{{item.id}}</switch>
+<button bindtap="switch"> Switch </button>
+<view wx:for="{{objectArray}}">{{item.unique}}</view>
+<button bindtap="addToFront"> Add to the front </button>
+
+<switch wx:for="{{numberArray}}" wx:key="*this" style="display: block;">{{item}}</switch>
+<view wx:for="{{numberArray}}">{{item}}</view>
+<button bindtap="addNumberToFront"> Add to the front </button>
+
+<view wx:for="array">
+  {{item}}
+</view>
+
+<view>条件渲染</view>
+
+<view wx:if="{{true}}">True</view>
+<view wx:if="{{length > 5}}">1</view>
+<view wx:elif="{{length > 2}}">2</view>
+<view wx:else>3</view>
+
+<view>
+  <block wx:if="{{false}}">
+    <view>view1</view>
+    <view>view2</view>
+  </block>
+  <block wx:else>
+    <view>view3</view>
+  </block>
+</view>
+
+<view>模板</view>
+<template name="msgItem">
+  <view>
+    <text>{{index}} : {{msg}} </text>
+    <text>Time: {{time}}</text>
+  </view>
+</template>
+
+<template is="msgItem" data="{{...items}}" />
+
+<template name="odd">
+  <view>odd + {{item}}</view>
+</template>
+<template name="even">
+  <view>even + {{item}}</view>
+</template>
+
+<block wx:for="{{[1, 2, 3, 4, 5]}}">
+  <template is="{{item % 2 == 0 ? 'odd' : 'even'}}" data="{{item}}" />
+</block>
+
+<view>事件的使用方式</view>
+<view id="tapTest" name="tt" data-hi="WeChat" bindtap="tapName"> Click Me</view>
+
+<view>事件绑定和冒泡</view>
+<view id="outer" bindtap="handleTap1">
+  outer view
+  <view id="middle" catchtap="handleTap2">
+    middle view
+    <view id="inner" bindtap="handleTap3">
+      inner view
+    </view>
+  </view>
+</view>
+
+<view data-alpha-beta="1" data-alphaBeta="2" bindtap="bindViewTap"> DataSet Test </view>
+
+<view>引用</view>
+<import src="item.wxml" />
+<template is="item" data="{{text}}" />
+
+<include src="header.wxml" />
+<view>body</view>
+<include src="footer.wxml" />
+
+<wxs src="tools.wxs" module="tools" />
+<view>{{tools.msg}}</view>
+<view>{{tools.bar(tools.FOO)}}</view>
+
+<wxs src="logic.wxs" module="logic" />
+
+<wxs module="foo">
+  var some_msg = "Hello ZhouXJ";
+  module.exports = {
+    msg: some_msg,
+  }
+</wxs>
+
+<view>{{foo.msg}}</view>

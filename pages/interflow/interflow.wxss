@@ -1,0 +1,11 @@
+/* pages/interflow/interflow.wxss */
+
+.btn {
+  margin-left: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+.view-class {
+  margin-top: 50rpx;
+  display: flex;
+}

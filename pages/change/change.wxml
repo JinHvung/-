@@ -1,0 +1,32 @@
+<form bindsubmit="formSubmit">
+
+  <view class="change-phone">
+    <image class="change-phone-img-size" src="../login/img/img_login_phone.png" />
+    <input class="change-phone-input" name="phone" placeholder="输入手机号码" />
+  </view>
+
+  <view class="change-pwd">
+    <image class="change-phone-img-size" src="../change/img/img_change_code.png" />
+    <input class="change-phone-input" name="code" placeholder="短信验证码" />
+    <button class="change-send-code" hover-class="other-button-hover" disabled="{{disabled}}" bindtap="getVerificationCode"> {{time}}</button>
+  </view>
+
+  <view class="change-pwd">
+    <image class="change-phone-img-size" src="../login/img/img_login_pwd.png" />
+    <input class="change-phone-input" name="pwd" placeholder="输入新的登录密码" />
+  </view>
+
+  <button class="change-btn" form-type="submit">确认</button>
+
+</form>
+
+<view class='button-style'>
+<button bindtap="rotate" size="mini">旋转</button>
+<button bindtap="scale" size="mini">缩放</button>
+<button bindtap="translate" size="mini">移动</button>
+<button bindtap="skew" size="mini">倾斜</button>
+</view>
+
+
+<view class="ddd" animation="{{animation}}" ></view>
+<button bindtap="startAnim" size='mini'>开始动画</button>
